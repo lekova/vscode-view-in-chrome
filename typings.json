@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "opn": "registry:dt/opn#3.0.2+20160620211513"
+  }
+}
