@@ -18,13 +18,28 @@ For example if there is an image subfolder under your extension project workspac
 #### Install [opn](https://github.com/sindresorhus/opn) library 
 `npm install --save opn`
 
-#### Install typings
+#### Install [typings](https://www.npmjs.com/package/typings)
 `npm install typings --global`
 
 #### Install typed definitions
 `typings install dt~opn --save`
 
-####
+#### Create an extension file to share
+* Install vsce
+
+`npm install -g vsce`
+
+* Generate .vsix file
+
+`vsce package`
+
+* Install from [.vsix](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) file
+
+`Cmd+Shift+P and Install from VSIX`
+
+#### Pusblish extension to marketplace
+
+
 
 ## Dependencies
 
