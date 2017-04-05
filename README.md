@@ -1,14 +1,16 @@
 # view-in-chrome
-[![view-in-chrome Logo](view-in-chrome.png)](view-in-chrome.png)
-
+<p align="center">
+	<img src="view-in-chrome-logo.png" alt="view-in-chrome-logo" />
+</p>
 "view-in-chrome" is a Visual Studio Code extension that opens currently active HTML file in Chrome.
 
 ## Features
 
 Simple is good! This extension is in existance because I want to write just one word in the command pallete and get the result I want without any extra typing.
 
-
-> TODO: Create animations on how to use the extension.
+<p align="center">
+	<img src="view-in-chrome-usage.gif" alt="view-in-chrome-usage" />
+</p>
 
 ## How Tos
 
