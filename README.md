@@ -5,45 +5,37 @@
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Simple is good! This extension is in existance because I want to write just one word in the command pallete and get the result I want without any extra typing.
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> TODO: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+> TODO: Create animations on how to use the extension.
 
 ## How Tos
 
-#### Install [opn](https://github.com/sindresorhus/opn) library 
+### Install [opn](https://github.com/sindresorhus/opn) library 
 `npm install --save opn`
 
-#### Install [typings](https://www.npmjs.com/package/typings)
+### Install [typings](https://www.npmjs.com/package/typings)
 `npm install typings --global`
 
-#### Install typed definitions
+### Install typed definitions for the `opn` library
 `typings install dt~opn --save`
 
-#### Create an extension file to share
-* Install vsce
+### Install publishing tool 
 
 `npm install -g vsce`
 
-* Generate .vsix file
+### Generate .vsix file 
 
 `vsce package`
 
-* Install from [.vsix](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) file
+### Install from [.vsix](https://code.visualstudio.com/docs/editor/extension-gallery#_install-from-a-vsix) file
 
 `Cmd+Shift+P and Install from VSIX`
 
-#### Pusblish extension to marketplace
+### Pusblish extension to marketplace 
 
+[link](https://code.visualstudio.com/docs/extensions/publish-extension#_publishing-extensions) to Visual Studio Code website
 
-
-## Dependencies
-
-* [opn](https://github.com/sindresorhus/opn) 
-* dt~opn - typings for [opn](https://github.com/sindresorhus/opn)
 
 **Enjoy!**
