@@ -7,6 +7,7 @@
   "engines": {
     "vscode": "^1.10.0"
   },
+  "icon": "view-in-chrome-logo.png",
   "categories": [
     "Other"
   ],
