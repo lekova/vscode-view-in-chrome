@@ -15,7 +15,7 @@ export function activate(context: vscode.ExtensionContext) {
     if(os.platform() === 'win32') {
         name = 'chrome';
     }
-    if(os.platform() === 'darwin') {
+    else if(os.platform() === 'darwin') {
         name = 'google chrome';
     } else {
         name = 'google-chrome';
@@ -26,4 +26,5 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
     context.subscriptions.push(disposable);
+    return;
 }
