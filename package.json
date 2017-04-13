@@ -2,7 +2,7 @@
   "name": "view-in-chrome",
   "displayName": "View in Chrome",
   "description": "Open html files in Chrome",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "lina",
   "engines": {
     "vscode": "^1.10.0"
@@ -20,7 +20,7 @@
     "browser",
     "html",
     "preview html",
-    "open html"
+    "open html" 
   ],
   "activationEvents": [
     "onCommand:extension.openChrome"
@@ -31,9 +31,30 @@
       {
         "command": "extension.openChrome",
         "title": "View In Chrome"
+      },
+      {
+        "command": "extension.openChromeFromMenu",
+        "title": "View In Chrome"
       }
-    ]
+    ],
+    "keybindings": [{
+      "command": "extension.openChrome",
+      "key": "Ctrl+Cmd+H"
+    }],
+    "menus": {
+      "explorer/context": [{
+        "when": "resourceLangId == html",
+        "command": "extension.openChromeFromMenu",
+        "group": "view-in-chrome"
+      }],
+      "editor/context": [{
+          "when": "resourceLangId == html",
+          "command": "extension.openChrome",
+          "group": "view-in-chrome"
+      }]
+  }
   },
+
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
     "compile": "tsc -watch -p ./",
