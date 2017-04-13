@@ -7,9 +7,14 @@
 ## Features
 
 Simple is good! This extension is in existance because I want to write just one word in the command pallete and get the result I want without any extra typing.
+You can open an HTML file through calling the the extension from the `Command Pallette` and `View in Chrome`, by selecting `View in Chrome` in the context menu, or by using `Ctrl + Cmd + H` shortcut keys.
 
 <p align="center">
 	<img src="view-in-chrome-usage.gif" alt="view-in-chrome-usage" />
+</p>
+
+<p align="center">
+	<img src="view-in-chrome-context-menu.png" alt="view-in-chrome-context-menu" />
 </p>
 
 ## How Tos
@@ -39,5 +44,9 @@ Simple is good! This extension is in existance because I want to write just one 
 
 [link](https://code.visualstudio.com/docs/extensions/publish-extension#_publishing-extensions) to Visual Studio Code website
 
+### Release Notes
+Version 0.0.2 has the following updates
+* Added shortcuts
+* Added "View in Chrome" context menu
 
 **Enjoy!**

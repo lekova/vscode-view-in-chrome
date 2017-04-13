@@ -6,25 +6,46 @@ import * as opn from 'opn';
 import * as os from 'os';
 
 export function activate(context: vscode.ExtensionContext) {
-
-    console.log('Congratulations, your extension "view-in-chrome" is now active!');
-
-    let editor = vscode.window.activeTextEditor;
-    let doc = editor.document;
-    let name;
-    if(os.platform() === 'win32') {
-        name = 'chrome';
-    }
-    else if(os.platform() === 'darwin') {
-        name = 'google chrome';
-    } else {
-        name = 'google-chrome';
-    }
-
-    let disposable = vscode.commands.registerCommand('extension.openChrome', () => {
-        opn(doc.fileName, { app: name });
+    let openChrome = vscode.commands.registerCommand('extension.openChrome', () => {
+        viewInCrome(context);
     });
 
-    context.subscriptions.push(disposable);
-    return;
+    let openChromeFromMenu = vscode.commands.registerCommand('extension.openChromeFromMenu', () => {
+        viewInCrome(context);
+    });
+
+    context.subscriptions.push(openChrome);
+}
+
+export function deactivate() {}
+
+function viewInCrome(context: vscode.ExtensionContext) {
+    let editor = vscode.window.activeTextEditor;
+    if(!editor) {
+        return;
+    }
+    
+    let doc = editor.document;
+    if(!doc) {
+        vscode.window.showInformationMessage('Open an HTML file to continue.');
+    }
+
+    let isFocused: boolean = !!vscode.window.activeTextEditor
+    let isHtml: boolean = vscode.window.activeTextEditor.document.languageId == 'html';
+
+    let appName: string, docName: string;
+    if(os.platform() === 'win32') {
+        appName = 'chrome';
+    }
+    else if(os.platform() === 'darwin') {
+        appName = 'google chrome';
+    } else {
+        appName = 'google-chrome';
+    }
+    if(!isFocused) { return; }
+    if(!isHtml) {
+        vscode.window.showInformationMessage('Open an HTML file to continue.');
+        return;
+    }
+    opn(doc.fileName, { app: appName });
 }
