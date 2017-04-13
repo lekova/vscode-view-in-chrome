@@ -2,12 +2,12 @@
   "name": "view-in-chrome",
   "displayName": "View in Chrome",
   "description": "Open html files in Chrome",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "lina",
   "engines": {
     "vscode": "^1.10.0"
   },
-  "icon": "view-in-chrome-logo.png",
+  "icon": "view-html-in-chrome.ico",
   "categories": [
     "Other"
   ],
@@ -20,7 +20,7 @@
     "browser",
     "html",
     "preview html",
-    "open html" 
+    "open html"
   ],
   "activationEvents": [
     "onCommand:extension.openChrome"
