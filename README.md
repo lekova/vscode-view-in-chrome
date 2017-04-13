@@ -1,6 +1,6 @@
 # view-in-chrome
 <p align="center">
-	<img src="view-html-in-chrome.ico" alt="view-in-chrome-icon" />
+	<img src="view-in-chrome-logo.png" alt="view-in-chrome-logo" />
 </p>
 "view-in-chrome" is a Visual Studio Code extension that opens currently active HTML file in Chrome.
 
@@ -19,7 +19,7 @@ You can open an HTML file through calling the the extension from the `Command Pa
 
 ## How Tos
 
-### Install [opn](https://github.com/sindresorhus/opn) library
+### Install [opn](https://github.com/sindresorhus/opn) library 
 `npm install --save opn`
 
 ### Install [typings](https://www.npmjs.com/package/typings)
@@ -28,11 +28,11 @@ You can open an HTML file through calling the the extension from the `Command Pa
 ### Install typed definitions for the `opn` library
 `typings install dt~opn --save`
 
-### Install publishing tool
+### Install publishing tool 
 
 `npm install -g vsce`
 
-### Generate .vsix file
+### Generate .vsix file 
 
 `vsce package`
 
@@ -40,14 +40,11 @@ You can open an HTML file through calling the the extension from the `Command Pa
 
 `Cmd+Shift+P and Install from VSIX`
 
-### Pusblish extension to marketplace
+### Pusblish extension to marketplace 
 
 [link](https://code.visualstudio.com/docs/extensions/publish-extension#_publishing-extensions) to Visual Studio Code website
 
-### Release Notes 0.0.3
-Version 0.0.3 changed icon from <img src="view-in-chrome-logo.png" alt="view-in-chrome-logo" height="36px" width="36"/> to <img src="view-html-in-chrome.ico" alt="view-in-chrome-icon" height="36px" width="36"/>
-
-### Release Notes 0.0.2
+### Release Notes
 Version 0.0.2 has the following updates
 * Added shortcuts
 * Added "View in Chrome" context menu
